@@ -1,0 +1,74 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <p class="h3 text-danger fw-bold">NG Contacts
+                <a class="btn btn-danger btn-sm" routerLink="/contacts/add"><i class="fa fa-plus-circle"></i> New</a>
+            </p>
+            <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, officia. Dignissimos veniam voluptates a architecto laborum molestiae consequatur maiores necessitatibus suscipit. Ipsum consequuntur rerum accusamus officia et aspernatur ducimus maxime!</p>
+
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" placeholder="Search User" class="form-control">
+                            </div>
+                            <div class="col">
+                                <input type="submit" class="btn btn-outline-dark" value="Search">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!--Loading Spinner-->
+<div *ngIf="loading">
+    <app-spinner></app-spinner>
+</div>
+
+
+<!--Error Message-->
+<div *ngIf="!loading && errorMessage">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="h4 text-danger fw-bold">{{errorMessage}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Contact Cards-->
+
+<div class="container mt-3" *ngIf="!loading && contacts.length > 0">
+    <div class="row">
+        <div class="col-md-6" *ngFor="let contact of contacts">
+            <div class="card list-group-item-danger shadow-lg my-2">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-sm-4">
+                            <img alt="" [src]="contact.photo" class="contact-img">
+                        </div>
+                        <div class="col-sm-7">
+                            <ul class="list-group">
+                                <li class="list-group-item">Name : <span class="fw-bold">{{contact.name}}</span></li>
+                                <li class="list-group-item">Email : <span class="fw-bold">{{contact.email}}</span></li>
+                                <li class="list-group-item">Mobile : <span class="fw-bold">{{contact.mobile}}</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-1 d-flex flex-column justify-content-center align-items-center">
+                            <a routerLink="/contacts/view/{{contact.id}}" class="btn btn-warning my-1"><i class="fa fa-eye"></i></a>
+                            <a routerLink="/contacts/edit/{{contact.id}}" class="btn btn-primary my-1"><i class="fa fa-pen"></i></a>
+                            <button class="btn btn-danger my-1"><i class="fa fa-trash-alt"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

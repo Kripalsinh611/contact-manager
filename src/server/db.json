@@ -1,0 +1,90 @@
+{
+  "contacts": [
+    {
+      "id": "rvsergta",
+      "name": "Kri Dodiya",
+      "company": "ASK Solution",
+      "email": "kripix11@gmail.com",
+      "title": "Officer",
+      "mobile": "9876535210",
+      "photo": "assets/monkey.png",
+      "groupId": "3"
+    },
+    {
+      "id": "rdgsth",
+      "name": "palsinh Dodiya",
+      "company": "ASK2 Solution",
+      "email": "krtsix11@gmail.com",
+      "title": "Officer",
+      "mobile": "9257543210",
+      "photo": "assets/monkey.png",
+      "groupId": "4"
+    },
+    {
+      "id": "rszdgzjyla",
+      "name": "Kripalsinh ya",
+      "company": "ASK3 Solution",
+      "email": "kripalnhsix11@gmail.com",
+      "title": "Officer",
+      "mobile": "9872145210",
+      "photo": "assets/monkey.png",
+      "groupId": "3"
+    },
+    {
+      "id": "umkdtuofxta",
+      "name": "Kripalsinh Dodiya",
+      "company": "ASK4 Solution",
+      "email": "kripal11@gmail.com",
+      "title": "Officer",
+      "mobile": "9877743210",
+      "photo": "assets/monkey.png",
+      "groupId": "3"
+    },
+    {
+      "name": "Kripalsinh",
+      "photo": "assets/monkey.png",
+      "email": "kripalsinh11@gmail.com",
+      "mobile": 9727733101,
+      "company": "Information Technology Engineer",
+      "title": "Web Developement",
+      "groupId": "4",
+      "id": "uoOXi5I"
+    },
+    {
+      "name": "Kripal",
+      "photo": "assets/monkey.png",
+      "email": "kripalsinh11@gmail.com",
+      "mobile": 9876543210,
+      "company": "ASK Solution",
+      "title": "Chairman",
+      "groupId": "6",
+      "id": "n_0qZme"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Colleague"
+    },
+    {
+      "id": "2",
+      "name": "Friend"
+    },
+    {
+      "id": "3",
+      "name": "Family"
+    },
+    {
+      "id": "4",
+      "name": "Service"
+    },
+    {
+      "id": "5",
+      "name": "Community"
+    },
+    {
+      "id": "6",
+      "name": "Social"
+    }
+  ]
+}

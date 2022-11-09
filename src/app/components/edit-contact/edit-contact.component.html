@@ -1,0 +1,51 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <p class="h3 fw-bold text-danger">Edit Contacts</p>
+            <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat soluta tempora molestias. Rem quidem unde aspernatur, pariatur itaque alias reiciendis. Voluptates eveniet possimus quibusdam est amet obcaecati quaerat unde nisi?</p>
+        </div>
+    </div>
+</div>
+
+
+<!--Edit Contact Form-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <form>
+                <div class="mb-2">
+                    <input  [(ngModel)]="contact.name" [value]="contact.name" name="name" type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="mb-2">
+                    <input type="text" class="form-control" placeholder="Photo Url">
+                </div>
+                <div class="mb-2">
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="mb-2">
+                    <input type="number" class="form-control" placeholder="Mobile">
+                </div>
+                <div class="mb-2">
+                    <input type="text" class="form-control" placeholder="Company">
+                </div>
+                <div class="mb-2">
+                    <input type="text" class="form-control" placeholder="Title">
+                </div>
+                <div class="mb-2">
+                    <select class="form-control">
+                        <option value="">Select a Group</option>
+                    </select>
+                </div>
+                <div class="mb-2">
+                    <input type="submit" class="btn btn-danger" value="Update">
+                    <a class="btn btn-dark ms-2" routerLink="/">Close</a>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-4">
+            <img src="" alt="" class="contact-img" src="assets/errorpage.jpg">
+        </div>
+    </div>
+</div>
+
+<pre>{{contact | json}}</pre>
